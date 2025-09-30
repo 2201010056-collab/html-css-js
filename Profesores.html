@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img src="undc.png" alt="" class="h-8 w-auto" />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="Profesores.html" class="text-sm/6 font-semibold text-white">profesores</a>
+        <a href="Ciclo.html" class="text-sm/6 font-semibold text-white">ciclo</a>
+        <a href="Universidad.html" class="text-sm/6 font-semibold text-white">Universidad</a>
+        <a href="Estudio.html" class="text-sm/6 font-semibold text-white">Estudio</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="undc.png" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="Universidad.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Universidad</a>
+                  <a href="Estudio.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Estudio</a>
+                  <a href="Ciclo.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">ciclo</a>
+                  <a href="Profesores.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">profesores</a>
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log in</a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+  </head>
+  <body>
+    <div class="bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
+    <div class="max-w-xl">
+      <h2 class="text-3xl font-semibold tracking-tight text-pretty text-white sm:text-4xl">Conoce a tus profesores</h2>
+      <p class="mt-6 text-lg/8 text-gray-400">Nuestros profesores son un grupo de gente  trabajadora que se encargar de enseñarnos los mejor posible acerca de ingeniera de sistemas</p>
+    </div>
+    <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+      <li>
+        <div class="flex items-center gap-x-6">
+          <img src="nilo.jpeg"" class="size-16 rounded-full outline-1 -outline-offset-1 outline-white/10" />
+          <div>
+            <h3 class="text-base/7 font-semibold tracking-tight text-white">nilo colquepisco</h3>
+            <p class="text-sm/6 font-semibold text-indigo-400">Profesor/I.O,Matematica</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-x-6">
+          <img src="bravo.jpg" alt="" class="size-16 rounded-full outline-1 -outline-offset-1 outline-white/10" />
+          <div>
+            <h3 class="text-base/7 font-semibold tracking-tight text-white">Claudio Isaias Huancahuire Bravo</h3>
+            <p class="text-sm/6 font-semibold text-indigo-400">Profesor/Desarrollo web</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-x-6">
+          <img src="leonidas.jpg"" alt="" class="size-16 rounded-full outline-1 -outline-offset-1 outline-white/10" />
+          <div>
+            <h3 class="text-base/7 font-semibold tracking-tight text-white">Leonidas</h3>
+            <p class="text-sm/6 font-semibold text-indigo-400">Profesor/Conf.Servidores</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-x-6">
+          <img src="peves.jpeg" alt="" class="size-16 rounded-full outline-1 -outline-offset-1 outline-white/10" />
+          <div>
+            <h3 class="text-base/7 font-semibold tracking-tight text-white">Juan Gustavo Hernandez Peves</h3>
+            <p class="text-sm/6 font-semibold text-indigo-400">Profesor/AI , Sis.Expertos</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-x-6">
+          <img src="jair.jpg" alt="" class="size-16 rounded-full outline-1 -outline-offset-1 outline-white/10" />
+          <div>
+            <h3 class="text-base/7 font-semibold tracking-tight text-white">Jair Emerson Ferreyros Yucra</h3>
+            <p class="text-sm/6 font-semibold text-indigo-400">Profesor/Diseño de Redes</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-x-6">
+          <img src="maria.jpeg" alt="" class="size-16 rounded-full outline-1 -outline-offset-1 outline-white/10" />
+          <div>
+            <h3 class="text-base/7 font-semibold tracking-tight text-white">Maria Soledad Choquevilca Cuno</h3>
+            <p class="text-sm/6 font-semibold text-indigo-400">Profesora/Derecho Empresarial</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+   <header class="absolute inset-x-0 top-0 z-50">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img src="undc.png" alt="" class="h-8 w-auto" />
+          <link rel="stylesheet" href="css5.css">
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="Profesores.html" class="text-sm/6 font-semibold text-white">profesores</a>
+        <a href="Ciclo.html" class="text-sm/6 font-semibold text-white">ciclo</a>
+        <a href="Universidad.html" class="text-sm/6 font-semibold text-white">Universidad</a>
+        <a href="Estudio.html" class="text-sm/6 font-semibold text-white">Estudio</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="undc.png" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="Universidad.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Universidad</a>
+                  <a href="Estudio.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Estudio</a>
+                  <a href="Ciclo.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">ciclo</a>
+                  <a href="Profesores.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">profesores</a>
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log in</a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+   <div class="bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Ciclo Universitario</h2>
+      <p class="mt-2 text-lg/8 text-gray-300">Tener a un grupo de estudiantes con los cuales pasar momentos es lo mas importantes para la uni a la hora de mejorar las habilidades blandas</p>
+    </div>
+    <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-700 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="2020-03-16" class="text-gray-400">Mar 16, 2020</time>
+          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800">III Ciclo</a>
+        </div>
+        <div class="group relative grow">
+          <h3 class="mt-3 text-lg/6 font-semibold text-white group-hover:text-gray-300">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+              Un Ciclo Inolvidable 
+            </a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-400">A la hora de ver que cursos se desarrollaban en el primer ciclo , se sabia que con la gente de III ciclo siempre se podia pasar un buen rato mientras habia cursos dificiles</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="grupo undc.webp" alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm/6">
+            <p class="font-semibold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                III ciclo (2023-2025)
+              </a>
+            </p>
+            <p class="text-gray-400">Ingeniera de Sistema</p>
+          </div>
+        </div>
+      </article>
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="2020-03-10" class="text-gray-400">Mar 10, 2020</time>
+          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800">VI Ciclo</a>
+        </div>
+        <div class="group relative grow">
+          <h3 class="mt-3 text-lg/6 font-semibold text-white group-hover:text-gray-300">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+             VI ciclo(2022-2025)
+            </a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-400">Son un grupo de alumnos capaces de realizar diversas tareas y proyectos ingeniosos</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="undc3.jpeg" alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm/6">
+            <p class="font-semibold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                VI ciclo(2022-2025)
+              </a>
+            </p>
+            <p class="text-gray-400">Ingeniera de Sistema</p>
+          </div>
+        </div>
+      </article>
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="2020-02-12" class="text-gray-400">Feb 12, 2020</time>
+          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800">VI ciclo</a>
+        </div>
+        <div class="group relative grow">
+          <h3 class="mt-3 text-lg/6 font-semibold text-white group-hover:text-gray-300">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+              VI ciclo(2022-2025)
+            </a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-400">Las Personas de VI ciclo son un gran grupo de gente a la hora de realizar servicios de proyectos y tambien son buenos a la hora de realizar trabajos bien hechos </p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="undc4.jpeg" alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm/6">
+            <p class="font-semibold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                VI ciclo(2022-2025)
+              </a>
+            </p>
+            <p class="text-gray-400">Ingeniera de Sistema</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
